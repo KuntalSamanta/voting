@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Block Votes</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:url('black.jpg') ;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #fff;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-name {
+      margin-left: 10px;
+    }
+
+    .menu {
+      background-color: #fff;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      width: 200px;
+    }
+
+    .menu-item {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .menu-item:hover {
+      background-color: #eee;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 80%;
+      margin-top: 20px;
+    }
+
+    .candidate-card {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 300px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .candidate-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .candidate-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .candidate-description {
+      margin-top: 5px;
+    }
+
+    .vote-button {
+      background-color: #370685;
+      color: #e6e5f3;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Block Votes</h1>
+      <div class="user-info">
+        <i class="fas fa-user"></i>
+        <span class="user-name">8anshmehta@gmail.com</span>
+      </div>
+    </div>
+    <div class="content">
+      <div class="menu">
+        <div class="menu-item">
+          <i class="fas fa-tachometer-alt"></i>
+          Dashboard
+        </div>
+        <div class="menu-item"><a href="/candidate.html">
+          <i class="fas fa-user"></i>
+          Candidate List</a>
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-list"></i>
+          Voter List
+        </div>
+        <div class="menu-item">
+          <i class="fas fa-sign-out-alt"></i>
+          Sign Out
+        </div>
+      </div>
+      <div class="main-content">
+        <h2>Candidate List</h2>
+        <div class="candidate-card">
+          <img src="luffy.jpg" class="candidate-image">
+          <div class="candidate-details">
+            <h3 class="candidate-name">LUFFY</h3>
+            <p class="candidate-description">Please make me the winner!</p>
+            <button class="vote-button">Vote</button>
+          </div>
+        </div>
+        <div class="candidate-card">
+          <img src="naruto.png" alt="Candidate Image" class="candidate-image">
+          <div class="candidate-details">
+            <h3 class="candidate-name">NARUTO</h3>
+            <p class="candidate-description">I am the winner!</p>
+            <button class="vote-button">Vote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

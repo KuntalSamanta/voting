@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .add-candidate-form {
+            background-color: #6f75c5;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+          }
+        
+          .form-label {
+            margin-bottom: 15px;
+          }
+        
+          .form-input {
+            padding: 10px;
+            border:#050238;
+            border-radius: 20px;
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        
+          .form-button {
+            background-color: #66bfe9;
+            color: #3a0faf;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+              cursor: pointer;
+            }
+        
+            .form-button:hover {
+              background-color: #989db9;
+            }
+        </style>
+        
+        
+        <h2>Add Candidate</h2>
+                <div class="add-candidate-form">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" class="form-input" placeholder="Enter your name">
+                  </div>
+                  <div class="form-group">
+                    <label for="image" class="form-label">Image:</label>
+                    <input type="file" id="image" class="form-input">
+                  </div>
+                  <div class="form-group">
+                    <label for="description" class="form-label">Description:</label>
+                    <textarea id="description" class="form-input" placeholder="Describe here"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label">E-mail ID:</label>
+                    <input type="email" id="email" class="form-input" placeholder="Enter your e-mail">
+                  </div>
+                  <button class="form-button">Register</button>
+                 </div>
+   
